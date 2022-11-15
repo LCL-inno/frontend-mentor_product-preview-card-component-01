@@ -1,0 +1,30 @@
+
+:root {
+    --width-mobile: 375px;
+    /* --width-transition01: 640px; */
+    --width-desktop: 1440px;
+
+
+    --border-radius01: 1em;
+    --border-radius02: .8em;
+
+    --proportion01: 1.5rem;
+    --proportion02: .5rem;
+
+    --primary-color-01: hsl(158, 36%, 37%);
+    --primary-color-02: hsl(30, 38%, 92%);
+
+    --neutral-color-01: hsl(212, 21%, 14%);
+    --neutral-color-02: hsl(228, 12%, 48%);
+    --neutral-color-03: hsl(0, 0%, 100%);
+    
+    --font-size-paragraph: 14px;
+
+    --font-weight01: 700;
+    --font-weight02: 500;
+
+    --family-font-01: 'Fraunces', serif;
+
+    --family-font-02:'Montserrat', sans-serif;
+
+}

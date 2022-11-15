@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* 
+
+v = viewport = ancho del dispositivo
+
+vw = viewport width
+
+vh = viewport height
+
+valores máximos 100% = 100vw
+
+*/
+
+
+.body-container {    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: left;
+
+    min-width: var(--width-mobile);
+    max-width: var(--width-desktop);
+
+    background-color: var(--primary-color-02);
+
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight02);
+
+    font-family: var(--family-font-02);    
+    color: var(--neutral-color-02);
+
+} 
+
+.container {    
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-items: center;
+
+    min-width: var(--width-mobile);
+    max-width: var(--width-desktop);
+
+    border-radius: var(--border-radius01);
+}
+
+    .container>*{
+        flex:50%;
+    }
+
+.card {
+    width: 100vw;
+    background-color: var(--neutral-color-03);
+}
+
+
+.card-image img.preview{
+    display: block;
+    border-top-left-radius: var(--border-radius01);
+    border-top-right-radius: var(--border-radius01);
+    
+    min-width: var(--width-mobile);
+
+}
+
+
+img.cart-icon {
+    width: 1rem;
+}
+
+
+.card-description::before{
+    content: 'perfume';
+    display: block;
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding-bottom: var(--proportion02);
+    
+}
+
+.card-description {
+    height: 75vw;
+    padding: var(--proportion01) var(--proportion01);
+    
+    border-bottom-left-radius: var(--border-radius01);
+    border-bottom-right-radius: var(--border-radius01);
+    
+}
+
+
+.title,
+.actual-price {    
+    font-weight: var(--font-weight01);
+    font-family: var(--family-font-01);
+    font-size: 2em;
+}
+
+.title {
+    color: var(--neutral-color-01);
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    margin: var(--proportion02) 0;
+}
+
+.actual-price {
+    color: var(--primary-color-01);
+    
+    margin-right: var(--proportion02);
+}
+
+.before-price {
+    vertical-align: medium;
+    margin-left: var(--proportion02);
+
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 100%;
+    height: 3rem;
+    padding: 1em .5em;
+
+    border-radius: var(--border-radius02);
+
+    color: var(--neutral-color-03);
+    background-color: var(--primary-color-01);
+
+}
+
+    
+    .btn:active{
+        box-shadow: inset 0 0 .1em black;
+        background-color: rgba(0,0,0,.55);
+    }
+
